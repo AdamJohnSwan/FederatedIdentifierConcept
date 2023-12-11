@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="models\User.ixx">
+      <Filter>models</Filter>
+    </ClCompile>
+    <ClCompile Include="main.ixx" />
+    <ClCompile Include="services\AuthService.ixx">
+      <Filter>services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\UserService.ixx">
+      <Filter>services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\abstract\IAuthService.ixx">
+      <Filter>services\abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="services\abstract\IUserService.ixx">
+      <Filter>services\abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="models\UserDto.ixx">
+      <Filter>models</Filter>
+    </ClCompile>
+    <ClCompile Include="models\AuthorizationReponse.ixx">
+      <Filter>models</Filter>
+    </ClCompile>
+    <ClCompile Include="Authorities.ixx" />
+    <ClCompile Include="HttpHandler.ixx" />
+    <ClCompile Include="TokenResponse.ixx">
+      <Filter>models</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="deps">
+      <UniqueIdentifier>{ce336579-9f41-4c33-8176-03f851f3867e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models">
+      <UniqueIdentifier>{cb872599-80b0-4160-bfbd-c3e4a9fa819e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services">
+      <UniqueIdentifier>{8a500f6d-707b-4494-b3a4-de56394a03d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\abstract">
+      <UniqueIdentifier>{2790a720-0649-4068-ac87-c8a74d38ed7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="deps\di.hpp">
+      <Filter>deps</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\httplib.h">
+      <Filter>deps</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
